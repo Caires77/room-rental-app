@@ -40,7 +40,7 @@ export default function BookingModal({ isOpen, onClose, selectedDate, roomName, 
         user_id: currentUserUid,
         start_date: selectedDate.toISOString().split('T')[0],
         end_date: selectedDate.toISOString().split('T')[0], // Para reservas diárias, start_date e end_date são os mesmos
-        type: 'daily_rental',
+        type: 'daily_third_party_rental',
         status: 'confirmed',
         credits_earned: 0,
         credits_used: 0,
